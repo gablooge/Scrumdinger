@@ -27,13 +27,25 @@ struct  DailyScrum: Identifiable {
 extension DailyScrum {
     static var data: [DailyScrum] {
         [
-            DailyScrum(title: "Design", attendees: ["Cathy", "Daisy", "Saimon", "Jonathan"], lengthInMinutes: 10, color: Color(red: 255, green: 0, blue: 0)),
+            DailyScrum(title: "Design", attendees: ["Cathy", "Daisy", "Saimon", "Jonathan"], lengthInMinutes: 10, color: Color(red: 255, green: 51, blue: 51)),
             DailyScrum(title: "App Dev", attendees: ["Katie", "Gray", "Euna", "Luis", "Darla",], lengthInMinutes: 5, color: Color(red: 255, green: 255, blue: 0)),
             DailyScrum(title: "Web Dev", attendees: ["Chella", "Chris", "Cristina", "Eden", "Carla", "Lindsey", "Aga", "Chad", "Jen", "Sarah"], lengthInMinutes: 1, color: Color(red: 0, green: 255, blue: 0))
         ]
     }
 }
 
+
+extension DailyScrum {
+    struct Data {
+        var title : String = ""
+        var attendees : [String] = []
+        var lengthInMinutes : Double = 5.0
+        var color : Color = .random
+       }
+    var data: Data {
+        return Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), color: color)
+    }
+}
 
     
 

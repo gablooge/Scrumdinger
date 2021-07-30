@@ -16,6 +16,7 @@
 		BF089CE426B27E68005AD6B4 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089CE326B27E68005AD6B4 /* Color+Codable.swift */; };
 		BF089CE626B2958F005AD6B4 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089CE526B2958F005AD6B4 /* ScrumsView.swift */; };
 		BF089CE826B2AED8005AD6B4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089CE726B2AED8005AD6B4 /* DetailView.swift */; };
+		BF089CEA26B37285005AD6B4 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089CE926B37285005AD6B4 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BF089CE326B27E68005AD6B4 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		BF089CE526B2958F005AD6B4 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		BF089CE726B2AED8005AD6B4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BF089CE926B37285005AD6B4 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				BF089CE126B26C49005AD6B4 /* CardView.swift */,
 				BF089CE526B2958F005AD6B4 /* ScrumsView.swift */,
 				BF089CE726B2AED8005AD6B4 /* DetailView.swift */,
+				BF089CE926B37285005AD6B4 /* EditView.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF089CEA26B37285005AD6B4 /* EditView.swift in Sources */,
 				BF089CD226B20FF8005AD6B4 /* MeetingView.swift in Sources */,
 				BF089CE626B2958F005AD6B4 /* ScrumsView.swift in Sources */,
 				BF089CE026B26191005AD6B4 /* DailyScrum.swift in Sources */,
