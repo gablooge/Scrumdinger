@@ -27,7 +27,7 @@ struct  DailyScrum: Identifiable {
 extension DailyScrum {
     static var data: [DailyScrum] {
         [
-            DailyScrum(title: "Design", attendees: ["Cathy", "Daisy", "Saimon", "Jonathan"], lengthInMinutes: 10, color: Color(red: 255, green: 51, blue: 51)),
+            DailyScrum(title: "Design", attendees: ["Cathy", "Daisy", "Saimon", "Jonathan"], lengthInMinutes: 10, color: Color(red: 0, green: 255, blue: 255)),
             DailyScrum(title: "App Dev", attendees: ["Katie", "Gray", "Euna", "Luis", "Darla",], lengthInMinutes: 5, color: Color(red: 255, green: 255, blue: 0)),
             DailyScrum(title: "Web Dev", attendees: ["Chella", "Chris", "Cristina", "Eden", "Carla", "Lindsey", "Aga", "Chad", "Jen", "Sarah"], lengthInMinutes: 1, color: Color(red: 0, green: 255, blue: 0))
         ]
@@ -44,6 +44,14 @@ extension DailyScrum {
        }
     var data: Data {
         return Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), color: color)
+    }
+    
+    mutating func update(from data: Data) {
+        title = data.title
+        attendees = data.attendees
+        lengthInMinutes = Int (data.lengthInMinutes)
+        color = data.color
+        
     }
 }
 
